@@ -53,4 +53,8 @@ class MoviesController < ApplicationController
     params.require(:movie).permit(:title, :description, :image_url, :released_on)
   end
 
+  def set_movie
+    @movie = Movie.find(params.fetch(:id))
+  end
+
 end
