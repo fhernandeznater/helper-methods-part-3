@@ -2,7 +2,11 @@
   List of all movies
 </h1>
 
+<%= render partial: "zebra/elephant", locals: { person: "Alice" } %>
+
 <hr>
+
+<%= render partial: "zebra/elephant", locals: { person: "Bob" } %>
 
 <div>
   <%= link_to "New movie", new_movie_path %>
